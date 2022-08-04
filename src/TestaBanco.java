@@ -5,7 +5,7 @@ public class TestaBanco {
         lucas.setCpf("000.000.000-00");
         lucas.setProfissao("Gerente Administrativo/Programador");
 
-        Conta contaDoLucas = new Conta();
+        Conta contaDoLucas = new Conta(1337, 016);
         contaDoLucas.deposita(2750);
 
 
