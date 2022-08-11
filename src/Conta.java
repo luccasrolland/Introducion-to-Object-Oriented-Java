@@ -1,3 +1,4 @@
+//"""creating class, defining attributes and access methods."""
 
 public class Conta {
     private double saldo;
@@ -13,12 +14,12 @@ public class Conta {
         this.numero = numero;
         this.saldo = 100;
         System.out.println("estou criando uma conta" + this.numero);
-
+    //"""creating constructor that returns the number of accounts created and which one was created respectively.""
     }
 
     public void deposita(double valor) {
         this.saldo += valor;
-
+    //"""creating the deposit method"""
     }
 
     public boolean saca(double valor) {
@@ -28,7 +29,7 @@ public class Conta {
         } else {
             return false;
         }
-
+    //"""creating the withdrawal method."""
     }
 
     public boolean transfere(double valor, Conta destino) {
@@ -38,6 +39,7 @@ public class Conta {
             return true;
         }
         return false;
+    //""creating the transfer method."""
     }
 
     public double getSaldo() {
@@ -75,9 +77,11 @@ public class Conta {
     public void setTitular(Cliente titular) {
         this.titular = titular;
     }
+    //"""creating methods to access private attributes."""
 
     public static int getTotal() {
         return total;
     }
+    //"""creating methods to access static attributes."""
 
 }
